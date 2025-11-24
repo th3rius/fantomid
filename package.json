@@ -1,0 +1,38 @@
+{
+  "name": "fantomid",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A tiny, universal ID generator compatible with JavaScript integers",
+  "keywords": [
+    "random",
+    "id",
+    "isomorphic"
+  ],
+  "author": "Gabriel de Oliveira <gabrielhk3@gmail.com> (https://nocnitsa.com)",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky",
+    "build": "rimraf dist && pkgroll --sourcemap",
+    "test": "node --test --experimental-test-module-mocks **/*.spec.js"
+  },
+  "exports": {
+    "require": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "dependencies": {
+    "@lukeed/csprng": "^1.1.0"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "pkgroll": "^2.21.3",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.1.2",
+    "typescript": "^5.9.3"
+  }
+}
