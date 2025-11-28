@@ -1,6 +1,6 @@
 {
   "name": "fantomid",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "description": "A tiny, universal ID generator compatible with JavaScript integers",
   "repository": "th3rius/fantomid",
@@ -16,6 +16,9 @@
     "build": "rimraf dist && pkgroll --sourcemap",
     "test": "node --test --experimental-test-module-mocks **/*.spec.js"
   },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
   "exports": {
     "require": {
       "types": "./dist/index.d.ts",
