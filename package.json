@@ -1,6 +1,6 @@
 {
   "name": "fantomid",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "type": "module",
   "description": "A tiny, universal ID generator compatible with JavaScript integers",
   "repository": "th3rius/fantomid",
