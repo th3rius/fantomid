@@ -32,5 +32,5 @@ export function fantomid() {
       (randomBytes[Math.floor(i / 8)] >> i % 8) & 1;
   }
 
-  return Number("0b" + bits.join(String()));
+  return Number("0b" + bits.join(""));
 }
