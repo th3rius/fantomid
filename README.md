@@ -17,7 +17,7 @@ the exact same moment with a low chance of collision.
 
 ```
 
-                                                      Bit-reverse
+   ID: 8209108814378532                               Bit-reverse
                                                           ◄─┐
      Random bits                   Timestamp                │
  ┌─────────────────┐ ┌────────────────────────────────────┐ │
