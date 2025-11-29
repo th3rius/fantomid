@@ -1,12 +1,11 @@
 import { random } from "@lukeed/csprng";
 
 const EPOCH = new Date("2024-09-08");
+const TIMESTAMP_LENGTH = 36;
+const RANDOM_BITS_LENGTH = 17;
+const TIMESTAMP_PRECISION_DIVIDER = 100;
 
 export function fantomid() {
-  const TIMESTAMP_LENGTH = 36;
-  const RANDOM_BITS_LENGTH = 17;
-  const TIMESTAMP_PRECISION_DIVIDER = 100;
-
   const bits = Array(TIMESTAMP_LENGTH + RANDOM_BITS_LENGTH);
 
   // Generates a timestamp to be part of the key. This is
