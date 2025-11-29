@@ -7,7 +7,7 @@ export function fantomid() {
   const RANDOM_BITS_LENGTH = 17;
   const TIMESTAMP_PRECISION_DIVIDER = 100;
 
-  const bits = new Array(TIMESTAMP_LENGTH + RANDOM_BITS_LENGTH);
+  const bits = Array(TIMESTAMP_LENGTH + RANDOM_BITS_LENGTH);
 
   // Generates a timestamp to be part of the key. This is
   // inspired by how UUID v7 works: the idea is that this
