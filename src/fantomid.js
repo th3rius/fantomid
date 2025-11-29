@@ -15,7 +15,7 @@ export function fantomid() {
   const timestamp = Math.round(
     // Use a more recent base date instead of the Unix Epoch to
     // increase the amount of time we can represent in the timestamp.
-    (new Date() - EPOCH) /
+    (Date.now() - EPOCH) /
       // Decrease the precision of the timestamp to
       // increase the amount of bits we can fit in a key.
       TIMESTAMP_PRECISION_DIVIDER,
