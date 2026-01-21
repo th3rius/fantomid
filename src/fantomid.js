@@ -23,9 +23,10 @@ export function fantomid() {
     bits[TIMESTAMP_LENGTH + RANDOM_BITS_LENGTH - 1 - i] = (timestamp >> i) & 1;
   }
 
-  // Generates a randomized part of the key. If multiple machines generate a
-  // key at the exact same time (limited by the precision of the timestamp),
-  // we are ensured to have a chance of collision of `1` in `2 ** RANDOM_BITS_LENGTH`.
+  // Generates a randomized part of the key. If multiple
+  // machines generate a key at the exact same time (limited
+  // by the precision of the timestamp), we are ensured to have
+  // a chance of collision of `1` in `2 ** RANDOM_BITS_LENGTH`.
   const randomBytes = random(Math.ceil(RANDOM_BITS_LENGTH / 8));
   for (let i = 0; i < RANDOM_BITS_LENGTH; i++) {
     bits[RANDOM_BITS_LENGTH - 1 - i] =
