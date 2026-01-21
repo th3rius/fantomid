@@ -3,7 +3,7 @@
  *
  * ```js
  * import fantomId from "fantomid";
- * fantomid(); //=> 5895736349537828
+ * fantomid(); //=> 8209108814378532
  * ```
  *
  * @returns A random integer.
